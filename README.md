@@ -39,3 +39,10 @@ In case you want to run webpack server then `npm run webpack`
 ### Authors
 
 * **Gaydukov Dmitiry** - *Take a look* - [How to become a Senior Javascript Developer](https://github.com/dgaydukov/how-to-become-a-senior-js-developer)
+
+
+### Plan
+1. Generate keys/hd wallet/password protected wallets/bulk wallets
+2. Sign any message
+3. Sign tx based on input file
+4. download keyfile like mew
