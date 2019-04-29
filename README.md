@@ -3,6 +3,7 @@
 
 ## Content
 * [Description](#description)
+* [How to use cold storage](#how-to-use-cold-storage)
 * [Installation](#installation)
 * [Built With](#built-with)
 * [Authors](#authors)
@@ -10,6 +11,10 @@
 ### Description
 
 This is my approach to create bitcoin cold wallet like the [mew](https://www.myetherwallet.com/).
+
+### How to use cold storage
+
+
 
 ### Installation
 
@@ -46,3 +51,5 @@ In case you want to run webpack server then `npm run webpack`
 2. Sign any message
 3. Sign tx based on input file
 4. download keyfile like mew
+5. Write general info about how to use cold storage (usb stick with os installed and encrypted disk)
+6. Write how this would work (additional site to get all your utxos)
