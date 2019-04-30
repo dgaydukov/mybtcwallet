@@ -10,11 +10,19 @@
 
 ### Description
 
-This is my approach to create bitcoin cold wallet like the [mew](https://www.myetherwallet.com/).
+This is my approach to create bitcoin cold wallet like the [mew](https://www.myetherwallet.com/). The wallet will do everything related to bitcoins:
+* 1. Generate keys, simple keys and hd wallets
+* 2. Sing/verify messages
+* 3. Sign transactions. Here is the most interesting part. As we all know, in order to create bitcoin tx, we need to pass all [utxo](https://www.investopedia.com/terms/u/utxo.asp) of addresses we want to spend.
+So we will have an additional website [mycryptoexplorer](https://mycryptoexplorer.com) to fetch all utxos for a list of addresses. Plus you will also be able to download currect rate (satoshis per byte), in order to set tx execution speed. 
+You generate hd wallet and then 10 addresses based on it. Receive money on them. And after some time want to spend them. You go to website, upload 10 addresses, download all utxos for them. Then go to your cold storage (usb with encrypted os),
+open mybtcwallet, upload downloaded file with utxos, insert your hd private key, input baserate, and get you generated tx. Then just scan qr code from your phone, and broadcast tx.
 
 ### How to use cold storage
 
-
+The best way is to use hardware wallet like [ledger](https://www.ledger.com/), or any other. Just google, read reviews and choose you like the most.
+There is also an option with bootable usb stick. This stick can also be used to store your other sensitive data (like passwords or personnal photos).
+So usually on this bootable usb stick you have a copy of mew website, that you use as cold storage.
 
 ### Installation
 
@@ -51,5 +59,3 @@ In case you want to run webpack server then `npm run webpack`
 2. Sign any message
 3. Sign tx based on input file
 4. download keyfile like mew
-5. Write general info about how to use cold storage (usb stick with os installed and encrypted disk)
-6. Write how this would work (additional site to get all your utxos)
