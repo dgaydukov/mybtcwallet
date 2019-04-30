@@ -22,8 +22,6 @@ class Header extends React.PureComponent<IProps, any>{
             <header>
                 <ul className={s.list}>
                     <li><Link to="/">{`/main(${this.props.user.id?"logged":"anonymous"})`}</Link></li>
-                    <li><Link to="/catalog">catalog</Link></li>
-                    <li><Link to="/profile">profile</Link></li>
                 </ul>
             </header>
         )
