@@ -56,6 +56,6 @@ In case you want to run webpack server then `npm run webpack`
 
 ### Plan
 1. Generate keys/hd wallet/password protected wallets/bulk wallets
-2. Sign any message
+2. Sign/verify any message
 3. Sign tx based on input file
 4. download keyfile like mew
